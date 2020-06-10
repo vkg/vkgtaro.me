@@ -57,9 +57,19 @@ $ curl vkgtaro.me/l/i
 $ curl vkgtaro.me/xl/g         (extra large, grayscale)
 ```
 
-From browser: access to [vkgtaro.me](vkgtaro.me)
+From browser: access to [vkgtaro.me](https://vkgtaro.me)
+
+## Development
+
+* Generating vkgtaro ASCII art
+
+Run `make gen`. It is depending on [im2a](https://github.com/tzvetkoff/im2a) command.
+
+* Shipment
+
+[vkgtaro.me](https://vkgtaro.me) is running on [vercel.com](https://vercel.com).
 
 ## Special Thanks
 
-[vkgtaro.me](vkgtaro.me) is greatly inspired and highly respecting [dogs.sh](dogs.sh).
+[vkgtaro.me](https://vkgtaro.me) is greatly inspired and highly respecting [dogs.sh](https://dogs.sh).
 Thank you for amazing project!
