@@ -2,16 +2,65 @@ package handler
 
 import (
 	"net/http"
+	"strings"
 
 	"github.com/vkg/vkgtaro.me/images"
 )
 
+const help = `
+       _         _                                  
+__   _| | ____ _| |_ __ _ _ __ ___   _ __ ___   ___ 
+\ \ / / |/ / _' | __/ _' | '__/ _ \ | '_ ' _ \ / _ \
+ \ V /|   < (_| | || (_| | | | (_) || | | | | |  __/
+  \_/ |_|\_\__, |\__\__,_|_|  \___(_)_| |_| |_|\___|
+            __/ |
+           |___/           github.com/vkg/vkgtaro.me
+
+Usage:
+ $ curl vkgtaro.me
+ $ curl vkgtaro.me/{SIZE}       (xs, s, m, l, xl)
+ $ curl vkgtaro.me/{SIZE}/{OPT} (i, g)
+ $ curl vkgtaro.me/h            (help)
+Examples:
+ $ curl vkgtaro.me/m            (medium)
+ $ curl vkgtaro.me/l/i          (large, introverted)
+ $ curl vkgtaro.me/xl/g         (extra large, grayscale)
+
+vkgtaro.me is inspired and highly respecting dogs.sh (github.com/fortwire/dogs.sh)
+`
+
+const helpHTML = `
+<body style='background-color:black; color:white;'>
+<pre>       _         _                                  
+__   _| | ____ _| |_ __ _ _ __ ___   _ __ ___   ___ 
+\ \ / / |/ / _' | __/ _' | '__/ _ \ | '_ ' _ \ / _ \
+ \ V /|   < (_| | || (_| | | | (_) || | | | | |  __/
+  \_/ |_|\_\__, |\__\__,_|_|  \___(_)_| |_| |_|\___|
+            __/ |
+           |___/           github.com/vkg/vkgtaro.me</pre>
+
+<pre style='font-size: 80%; font-family:Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;'>
+<br><b>Usage:</b><br>
+ $ curl vkgtaro.me<br>
+ $ curl vkgtaro.me/{SIZE}       (xs, s, m, l, xl)<br>
+ $ curl vkgtaro.me/{SIZE}/{OPT} (i, g)<br>
+ $ curl vkgtaro.me/h            (help)<br>
+<br><b>Examples:</b><br>
+ $ curl vkgtaro.me/m            (medium)<br>
+ $ curl vkgtaro.me/l/i          (large, introverted)<br>
+ $ curl vkgtaro.me/xl/g         (extra large, grayscale)<br>
+
+vkgtaro.me is inspired and highly respecting dogs.sh (github.com/fortwire/dogs.sh)<br>
+</pre>
+</body>
+`
+
 func Handler(w http.ResponseWriter, r *http.Request) {
-	// h, err := ioutil.ReadFile("help.txt")
-	// if err != nil {
-	// 	panic(err)
-	// }
-	help := "helpppppppppp"
+	// From browser
+	if !strings.Contains(r.Header.Get("User-Agent"), "curl") {
+		respond(w, helpHTML)
+		return
+	}
 
 	switch r.URL.Path {
 	case "/h":
