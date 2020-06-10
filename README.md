@@ -20,7 +20,7 @@ Usage:
 Examples:
 
  $ curl -L vkgtaro.me/m            (medium)
- $ curl -L vkgtaro.me/l/i          (large, introverted)
+ $ curl -L vkgtaro.me/l/i          (large, inverted)
  $ curl -L vkgtaro.me/xl/g         (extra large, grayscale)
 ```
 
@@ -50,7 +50,7 @@ Example:
 # Show medium sized vkgtaro
 $ curl -L vkgtaro.me/m
 
-# Show large sized introverted vkgtaro
+# Show large sized inverted vkgtaro
 $ curl -L vkgtaro.me/l/i
 
 # Show extra large sized grayscale vkgtaro

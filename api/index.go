@@ -23,7 +23,7 @@ Usage:
  $ curl -L vkgtaro.me/h            (help)
 Examples:
  $ curl -L vkgtaro.me/m            (medium)
- $ curl -L vkgtaro.me/l/i          (large, introverted)
+ $ curl -L vkgtaro.me/l/i          (large, inverted)
  $ curl -L vkgtaro.me/xl/g         (extra large, grayscale)
 
 vkgtaro.me is inspired and highly respecting dogs.sh (github.com/fortwire/dogs.sh)
@@ -47,7 +47,7 @@ __   _| | ____ _| |_ __ _ _ __ ___   _ __ ___   ___
  $ curl -L vkgtaro.me/h            (help)<br>
 <br><b>Examples:</b><br>
  $ curl -L vkgtaro.me/m            (medium)<br>
- $ curl -L vkgtaro.me/l/i          (large, introverted)<br>
+ $ curl -L vkgtaro.me/l/i          (large, inverted)<br>
  $ curl -L vkgtaro.me/xl/g         (extra large, grayscale)<br>
 
 vkgtaro.me is inspired and highly respecting dogs.sh (github.com/fortwire/dogs.sh)<br>
