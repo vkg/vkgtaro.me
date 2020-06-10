@@ -1,26 +1,18 @@
-package main
+package handler
 
 import (
-	"io/ioutil"
 	"net/http"
 
 	"github.com/vkg/vkgtaro.me/images"
 )
 
-var help = ""
+func Handler(w http.ResponseWriter, r *http.Request) {
+	// h, err := ioutil.ReadFile("help.txt")
+	// if err != nil {
+	// 	panic(err)
+	// }
+	help := "helpppppppppp"
 
-func main() {
-	h, err := ioutil.ReadFile("help.txt")
-	if err != nil {
-		panic(err)
-	}
-	help = string(h)
-
-	http.HandleFunc("/", vkgtaroHandler)
-	_ = http.ListenAndServe(":8080", nil)
-}
-
-func vkgtaroHandler(w http.ResponseWriter, r *http.Request) {
 	switch r.URL.Path {
 	case "/h":
 		respond(w, help)
