@@ -17,14 +17,14 @@ __   _| | ____ _| |_ __ _ _ __ ___   _ __ ___   ___
            |___/           github.com/vkg/vkgtaro.me
 
 Usage:
- $ curl vkgtaro.me
- $ curl vkgtaro.me/{SIZE}       (xs, s, m, l, xl)
- $ curl vkgtaro.me/{SIZE}/{OPT} (i, g)
- $ curl vkgtaro.me/h            (help)
+ $ curl -L vkgtaro.me
+ $ curl -L vkgtaro.me/{SIZE}       (xs, s, m, l, xl)
+ $ curl -L vkgtaro.me/{SIZE}/{OPT} (i, g)
+ $ curl -L vkgtaro.me/h            (help)
 Examples:
- $ curl vkgtaro.me/m            (medium)
- $ curl vkgtaro.me/l/i          (large, introverted)
- $ curl vkgtaro.me/xl/g         (extra large, grayscale)
+ $ curl -L vkgtaro.me/m            (medium)
+ $ curl -L vkgtaro.me/l/i          (large, introverted)
+ $ curl -L vkgtaro.me/xl/g         (extra large, grayscale)
 
 vkgtaro.me is inspired and highly respecting dogs.sh (github.com/fortwire/dogs.sh)
 `
@@ -41,14 +41,14 @@ __   _| | ____ _| |_ __ _ _ __ ___   _ __ ___   ___
 
 <pre style='font-size: 80%; font-family:Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;'>
 <br><b>Usage:</b><br>
- $ curl vkgtaro.me<br>
- $ curl vkgtaro.me/{SIZE}       (xs, s, m, l, xl)<br>
- $ curl vkgtaro.me/{SIZE}/{OPT} (i, g)<br>
- $ curl vkgtaro.me/h            (help)<br>
+ $ curl -L vkgtaro.me<br>
+ $ curl -L vkgtaro.me/{SIZE}       (xs, s, m, l, xl)<br>
+ $ curl -L vkgtaro.me/{SIZE}/{OPT} (i, g)<br>
+ $ curl -L vkgtaro.me/h            (help)<br>
 <br><b>Examples:</b><br>
- $ curl vkgtaro.me/m            (medium)<br>
- $ curl vkgtaro.me/l/i          (large, introverted)<br>
- $ curl vkgtaro.me/xl/g         (extra large, grayscale)<br>
+ $ curl -L vkgtaro.me/m            (medium)<br>
+ $ curl -L vkgtaro.me/l/i          (large, introverted)<br>
+ $ curl -L vkgtaro.me/xl/g         (extra large, grayscale)<br>
 
 vkgtaro.me is inspired and highly respecting dogs.sh (github.com/fortwire/dogs.sh)<br>
 </pre>

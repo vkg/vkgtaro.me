@@ -11,17 +11,17 @@ __   _| | ____ _| |_ __ _ _ __ ___   _ __ ___   ___
 
 Usage:
 
- $ curl vkgtaro.me
- $ curl vkgtaro.me/{SIZE}       (xs, s, m, l, xl)
- $ curl vkgtaro.me/{SIZE}/{OPT} (i, g)
- $ curl vkgtaro.me/h            (help)
+ $ curl -L vkgtaro.me
+ $ curl -L vkgtaro.me/{SIZE}       (xs, s, m, l, xl)
+ $ curl -L vkgtaro.me/{SIZE}/{OPT} (i, g)
+ $ curl -L vkgtaro.me/h            (help)
 
 
 Examples:
 
- $ curl vkgtaro.me/m            (medium)
- $ curl vkgtaro.me/l/i          (large, introverted)
- $ curl vkgtaro.me/xl/g         (extra large, grayscale)
+ $ curl -L vkgtaro.me/m            (medium)
+ $ curl -L vkgtaro.me/l/i          (large, introverted)
+ $ curl -L vkgtaro.me/xl/g         (extra large, grayscale)
 ```
 
 [vkgtaro.me](https://vkgtaro.me) - curl vkgtaro in your terminal.
@@ -32,29 +32,29 @@ From your terminal:
 
 ```sh
 # Show vkgtaro
-$ curl vkgtaro.me
+$ curl -L vkgtaro.me
 
 # Show vkgtaro in any size you like
-$ curl vkgtaro.me/{SIZE} (xs, s, m, l, xl)
+$ curl -L vkgtaro.me/{SIZE} (xs, s, m, l, xl)
 
 # Show vkgtaro in any size/with option
-$ curl vkgtaro.me/{SIZE}/{OPT} (i, g)
+$ curl -L vkgtaro.me/{SIZE}/{OPT} (i, g)
 
 # Show how to see vkgtaro
-$ curl vkgtaro.me/h
+$ curl -L vkgtaro.me/h
 ```
 
 Example:
 
 ```sh
 # Show medium sized vkgtaro
-$ curl vkgtaro.me/m
+$ curl -L vkgtaro.me/m
 
 # Show large sized introverted vkgtaro
-$ curl vkgtaro.me/l/i
+$ curl -L vkgtaro.me/l/i
 
 # Show extra large sized grayscale vkgtaro
-$ curl vkgtaro.me/xl/g         (extra large, grayscale)
+$ curl -L vkgtaro.me/xl/g
 ```
 
 From browser: access to [vkgtaro.me](https://vkgtaro.me)
